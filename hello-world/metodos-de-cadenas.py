@@ -20,8 +20,7 @@ print(example_title_2.title())
 # Un metodo comun es [.split()] Sin argumentos, el metodo separará la cadena en cada espacio.
 
 # ejemplo:
-temperatures = """Daylight: 260 F
-Nighttime: -280 F"""
+temperatures = """Daylight: 260 F Nighttime: -280 F"""
 print(str(temperatures.split()))
 # Esto nos imprimiría:
 #   ['Daylight:', '260', 'F', 'Nighttime:', '-280', 'F']
@@ -48,7 +47,7 @@ print(str(temperatures.split('\n')))
 "Moon" in "This text will describe facts about the Moon"
 #True
 
-
+# -------------------------------------------------------------------------------------------------------
 # Un enfoque para buscar la posicion de una palabra especifica en una cadena
 # consiste en usar el metodo [.find()]
 # ejemplo:
@@ -121,7 +120,7 @@ for item in mars_temperature.split():
 "-60".startswith('-')
 #True
 
-# Similar el método [.endswith()] comprueba el ultimo caracter de la cadena
+# El método [.endswith()] comprueba el ultimo caracter de la cadena
 #ejemplo:
 if "30 C".endswith("C"):
     print("This temperature is in Celsius")
