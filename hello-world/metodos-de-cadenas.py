@@ -13,4 +13,33 @@ print(example_title_2.title())
 # Esto nos imprimiría:
 #   Temperatures And Facts About The Moon
 
+# --------------------------------------------------------------------------------------------------------
+
+# Division de una cadena
+
+# Un metodo comun es .split() Sin argumentos, el metodo separará la cadena en cada espacio.
+
+# ejemplo:
+temperatures = """Daylight: 260 F
+Nighttime: -280 F"""
+print(str(temperatures.split()))
+# Esto nos imprimiría:
+#   ['Daylight:', '260', 'F', 'Nighttime:', '-280', 'F']
+
+
+# Si a esto le añadimos el caracter de nueva linea implícito se puede usar para divir
+# la cadena al final de cada linea y crear lineas unicas:  .split(\n)
+# ejemplo:
+temperatures = """Daylight: 260 F
+Nighttime: -280 F"""
+print(str(temperatures.split('\n')))
+# Esto nos imprimiría: 
+#    ['Daylight: 260 F', 'Nighttime: -280 F']
+
+# --------------------------------------------------------------------------------------------------------
+
+# Busqueda de cadena
+
+
+
 
