@@ -40,6 +40,13 @@ print(str(temperatures.split('\n')))
 
 # Busqueda de cadena
 
+# El operador [in] lo utilizamos para encontrar palabras clave
+# ejemplo:
+
+"Moon" in "This text will describe facts and challenges with space travel"
+#False
+"Moon" in "This text will describe facts about the Moon"
+#True
 
 
 
