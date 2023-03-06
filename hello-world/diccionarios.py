@@ -150,3 +150,17 @@ else:
 
 # Recuperación de todos los valores
 
+# [values()] devuelve la lista de todos los valores de un diccionario sin sus claves correspondientes.
+# values() puede resultar más util cuando se usa clave con fines de etiquetado, como el ejemplo anterior
+# donde las claves son el nombre del mes
+
+# Ejemplo, podemos usar values() para determinar el importe total de las precipitaciones:
+total_rainfall = 0
+for value in rainfall.values():
+    total_rainfall = total_rainfall + value
+
+print(f'There was {total_rainfall}cm in the last quarter')
+# Output:
+# There was 10.8cm in the last quarter
+
+
