@@ -6,4 +6,4 @@
 print("Persecs exercise")
 persecs_input = input('Ingrese cuantos persecs desea convertir: ')
 lightyears = int(persecs_input) * 3.26
-print((str(persecs_input) + " parsecs is " + str(lightyears) + " lightyears"))
+print(str(persecs_input),"parsecs is",str(lightyears),"lightyears")
