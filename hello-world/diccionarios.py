@@ -113,3 +113,40 @@ planet ['diameter (km)'] = {
 # Para recuperar valores en un diccionario anidado, debemos encadenar [] o llamadas a get
 print(f'{planet["name"]} polar diameter: {planet["diameter (km)"]["polar"]}')
 # Output: Jupiter polar diameter: 133709
+
+# --------------------------------------------------------------------------------------------------------------------
+
+# Recuperación de todas las claves y valores
+# El método [keys()] devuelve el objetp de una lista que contiene todas las claves
+
+# Ejmeplo: (Almacenamos los ultimos 3 meses de precipitaciones)
+rainfall = {
+    'october': 3.5,
+    'november': 4.2,
+    'december': 2.1
+}
+
+
+# Ahora queremos mostrar la lista de todas las precipitaciones pero seria tedioso:
+for key in rainfall.keys():
+    print(f'{key}: {rainfall[key]}cm')
+# Output:
+# october: 3.5cm
+# november: 4.2cm
+# december: 2.1cm
+
+# -----------------------------------------------------------------------------------------------------------------------
+
+# Determinación de la existencia de una clave en un diccionario
+# Al actualizar un valor en un diccionario, Python sobrescribirá el valor existente o creará uno, si la clave no existe. 
+# Si quiere agregar a un valor en lugar de sobrescribirlo, puede comprobar si la clave existe mediante (in)
+if 'december' in rainfall:
+    rainfall['december'] = rainfall['december'] + 1
+else:
+    rainfall['december'] = 1
+# Because december exists, the value will be 3.1
+
+# -------------------------------------------------------------------------------------------------------------------------
+
+# Recuperación de todos los valores
+
